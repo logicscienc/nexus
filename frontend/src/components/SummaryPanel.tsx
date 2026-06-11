@@ -20,7 +20,7 @@ export default function SummaryPanel({
       className="glass-card p-5 mb-4 w-full mx-auto"
     >
       <h2 className="text-white text-xl font-semibold mb-3">
-        🧠 Founder Summary
+         Founder Summary
       </h2>
 
       <div className="grid md:grid-cols-3 gap-4 text-sm text-gray-300">
