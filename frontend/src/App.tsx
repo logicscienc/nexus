@@ -1,7 +1,5 @@
   import {useState, useEffect, useRef} from "react";
-// import html2canvas from "html2canvas";
-import { toPng } from "html-to-image";
-import jsPDF from "jspdf";
+
 
 import { pdf } from "@react-pdf/renderer";
 import {ReportPDF} from "./pdf/ReportPDF";
@@ -106,24 +104,24 @@ const handleAnalyze = async () => {
 };
 
 
-const getCompetitorScore = (c: any) => {
-  const wins = c.weWinIn?.length || 0;
-  const losses = c.weLoseIn?.length || 0;
+// const getCompetitorScore = (c: any) => {
+//   const wins = c.weWinIn?.length || 0;
+//   const losses = c.weLoseIn?.length || 0;
 
-  const base = c.confidenceScore || 50;
+//   const base = c.confidenceScore || 50;
 
 
-  const winWeight = wins * 12;
-  const lossWeight = losses * 15;
+//   const winWeight = wins * 12;
+//   const lossWeight = losses * 15;
 
   
-  let verdictWeight = 0;
-  if (c.verdict === "HIGH THREAT") verdictWeight = 25;
-  if (c.verdict === "COMPETITIVE") verdictWeight = 10;
-  if (c.verdict === "WINNING") verdictWeight = -10;
+//   let verdictWeight = 0;
+//   if (c.verdict === "HIGH THREAT") verdictWeight = 25;
+//   if (c.verdict === "COMPETITIVE") verdictWeight = 10;
+//   if (c.verdict === "WINNING") verdictWeight = -10;
 
-  return base + winWeight - lossWeight + verdictWeight;
-};
+//   return base + winWeight - lossWeight + verdictWeight;
+// };
 
 
 

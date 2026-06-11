@@ -33,7 +33,7 @@ export default function CompetitorCharts({ data }: any) {
     confidence: c.confidenceScore || 0,
   }));
 
-  const featureData = data.map((c: any, i: number) => ({
+  const featureData = data.map((c: any) => ({
     name: c.name,
     features: c.strengths?.length || 0,
     gap: 10 - (c.strengths?.length || 0), // fake "gap trend"

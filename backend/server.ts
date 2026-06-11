@@ -57,7 +57,7 @@ You must always follow this exact structure:
   "featureMatrix": [
     {
       "feature": "",
-      "ourProduct": true
+      "ourProduct": true,
        "Buffer": false,
   "Hootsuite": false,
   "SproutSocial": false

@@ -8,7 +8,6 @@ type Props = {
 
 export default function SummaryPanel({
   competitors,
-  recommendations,
   leads,
 }: Props) {
   const topCompetitor = competitors?.[0]?.name || "N/A";
