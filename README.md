@@ -27,6 +27,10 @@ Nexus Intelligence Dashboard is a full-stack AI SaaS-style tool that helps users
 
 ---
 
+## Dashboard Preview
+
+![Nexus Dashboard](./images/dashboard.png)
+
 ## 🧠 Key Features
 
 ### 📊 Competitor Intelligence
