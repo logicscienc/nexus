@@ -138,6 +138,8 @@ Create .env file:
 OPENAI_API_KEY=your_openai_api_key
 PORT=5000
 ```
+
+
 📦 Deployment Details
 Frontend (Vercel)
 Framework: Vite React
@@ -147,12 +149,17 @@ Backend (Render)
 Runtime: Node.js
 Start Command: node dist/server.js (or ts-node in dev)
 Environment variables configured in Render dashboard
+
+
+
 🧾 Assumptions Made
 AI-generated data is synthetic (not real market data)
 Competitor insights are simulated using GPT model
 Leads are AI-generated and not real contacts
 Feature matrix is derived from comparative reasoning, not external datasets
 Focus is on demonstration of AI intelligence layer, not production data accuracy
+
+
 ⚠️ Limitations
 No real-time market data integration
 AI outputs may vary per request
@@ -168,6 +175,8 @@ SaaS monetization layer
 
 
 Built as a full-stack AI SaaS demo project showcasing:
+
+
 
 AI system design
 Full-stack React + Node architecture
