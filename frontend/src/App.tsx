@@ -315,38 +315,19 @@ useEffect(() => {
 />
 
     {/* INPUT SECTION */}
-<div className="glass-card input-section w-full max-w-2xl mx-auto">
-  <div className="flex flex-col sm:flex-row gap-3">
+    <div className="glass-card input-section w-full max-w-3xl mx-auto">
+  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
     <input
       type="text"
       placeholder="Enter product idea..."
       value={query}
       onChange={(e) => setQuery(e.target.value)}
-      className="
-        flex-1
-        w-full
-        px-4
-        py-3
-        rounded-lg
-        bg-slate-800
-        text-white
-        outline-none
-      "
+      className="flex-1"
     />
 
     <button
       onClick={handleAnalyze}
-      className="
-        w-full
-        sm:w-auto
-        px-6
-        py-3
-        rounded-lg
-        bg-green-500
-        text-black
-        font-semibold
-        whitespace-nowrap
-      "
+      className="w-full sm:w-auto px-6 py-3"
     >
       Analyze
     </button>
