@@ -55,14 +55,18 @@ You must always follow this exact structure:
   ],
 
   "featureMatrix": [
-    {
-      "feature": "",
-      "ourProduct": true,
-       "Buffer": false,
-  "Hootsuite": false,
-  "SproutSocial": false
-    }
-  ],
+  {
+    "feature": "",
+    "ourProduct": true,
+    "CompetitorNameA": false,
+  "CompetitorNameB": true,
+  "CompetitorNameC": true,
+  "CompetitorNameD": false,
+  "CompetitorNameE": false,
+  }
+],
+
+
 
   "comparison": {
     "ourProductName": "",
@@ -110,6 +114,28 @@ You must always follow this exact structure:
 ────────────────────────────
 RULES — STRICT OUTPUT CONTROL
 ────────────────────────────
+
+FEATURE MATRIX RULES:
+
+- Generate 8–12 feature rows.
+- Use the exact names of the identified competitors as column keys.
+- The same competitor names must be used consistently across ALL feature rows.
+- Competitor names must exactly match the competitors array.
+- Never use Buffer, Hootsuite, SproutSocial, or any unrelated example company names.
+- Include both strengths of our product and features competitors offer that our product lacks.
+- Include feature gaps and differentiation opportunities.
+
+FEATURE MATRIX EXAMPLE:
+
+{
+  "feature": "Mock Technical Interviews",
+  "ourProduct": true,
+  "<competitor_name_1>": false,
+  "<competitor_name_2>": true,
+  "<competitor_name_3>": true,
+  "<competitor_name_4>": false,
+  "<competitor_name_5>": false
+}
 
 GENERAL RULES:
 - Output MUST be valid JSON only

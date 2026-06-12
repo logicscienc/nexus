@@ -57,6 +57,8 @@ const handleAnalyze = async () => {
 
     const data = await response.json();
     console.log("API Response", data);
+    console.log("FEATURE MATRIX:", data.featureMatrix);
+console.log("COMPARISON:", data.comparison);
 
     
     setFeatureMatrix(data.featureMatrix || []);
