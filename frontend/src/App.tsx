@@ -315,24 +315,19 @@ useEffect(() => {
 />
 
     {/* INPUT SECTION */}
-    <div className="glass-card input-section w-full max-w-3xl mx-auto">
-  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-    <input
-      type="text"
-      placeholder="Enter product idea..."
-      value={query}
-      onChange={(e) => setQuery(e.target.value)}
-      className="flex-1"
-    />
+    <div className="glass-card input-section w-full max-w-2xl mx-auto flex flex-col sm:flex-row gap-3">
+      <input
+        type="text"
+        placeholder="Enter product idea..."
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        className="flex-1 w-full"
+      />
 
-    <button
-      onClick={handleAnalyze}
-      className="w-full sm:w-auto px-6 py-3"
-    >
-      Analyze
-    </button>
-  </div>
-</div>
+      <button onClick={handleAnalyze} className="w-full sm:w-auto">
+        Analyze
+      </button>
+    </div>
 
     {/* MAIN CONTENT */}
    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
